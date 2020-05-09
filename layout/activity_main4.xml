@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#D3FAD6"
+    android:orientation="vertical"
+    tools:context=".Main4Activity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Let's calculate time needed to gain weight!"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="123dp"
+            android:layout_marginRight="3dp"
+            android:text="Select gender:"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"></Spinner>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_first_numberG"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Enter weight in kg (i.e. 45)"
+
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/goal_weightG"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Enter goal weight (i.e. 40)"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_second_numberG"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Enter height in cm (i.e. 165)"
+
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ageG"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Enter age (i.e. 23)"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextViewTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dp"
+            android:layout_marginRight="3dp"
+            android:text="Select activity level:"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+
+        <Spinner
+            android:id="@+id/spinner_activityG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:textStyle="bold">
+
+        <TextView
+            android:id="@+id/TextViewTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Time to gain weight:"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/number_timeG"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="1dp"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_timeG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"></Spinner>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_addG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:drawableTop="@drawable/ic_technology"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_solutionG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txt_solution2G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txt_solution3G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_menuG"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_interface"
+            android:text="Back to Menu"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="240dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/stewie" />
+    </LinearLayout>
+</LinearLayout>

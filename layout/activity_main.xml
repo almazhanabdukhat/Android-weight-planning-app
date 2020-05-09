@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ABFDEF75"
+    android:orientation="vertical"
+
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewa"
+
+        android:layout_width="272dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:drawableTop="@drawable/ic_orientation"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#033254"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/w_l_time"
+        android:layout_width="177dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#e0ffff"
+        android:drawableTop="@drawable/ic_arrows"
+        android:text="Calculate weight loss time"
+        android:textColor="#000080"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewa" />
+
+    <Button
+        android:id="@+id/w_g_time"
+        android:layout_width="177dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:background="#e0ffff"
+        android:drawableTop="@drawable/ic_muscle"
+        android:text="Calculate weight gain time"
+        android:textColor="#000080"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewa" />
+
+    <Button
+        android:id="@+id/btn_bmi"
+        android:layout_width="177dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#e0ffff"
+        android:drawableTop="@drawable/ic_furniture"
+        android:text="Calculate bmi"
+        android:textColor="#000080"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textViewS"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="  Thank you for using Weight Planning App!"
+        android:textColor="#033254"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+
+</LinearLayout>

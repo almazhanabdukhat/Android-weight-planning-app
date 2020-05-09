@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiActivity"
+
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Let's calculate bmi" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp">
+
+        <TextView
+            android:id="@+id/TextViewTitleBmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="123dp"
+            android:layout_marginRight="3dp"
+            android:text="Select metric system:"
+            android:textSize="14sp"> </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerB"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"> </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/TextViewTitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="10dp"
+            android:text="Enter age:"
+            android:textSize="14sp"> </TextView>
+
+        <EditText
+            android:id="@+id/ageY"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewTitle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="years"
+            android:textSize="14sp"> </TextView>
+        <EditText
+            android:id="@+id/ageM"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewTitle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="months"
+            android:textSize="14sp"> </TextView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/TextViewTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="123dp"
+            android:layout_marginRight="3dp"
+            android:text="Select gender:"
+            android:textSize="14sp"> </TextView>
+
+        <Spinner
+            android:id="@+id/spinner_genB"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"> </Spinner>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/TextViewTitle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="130dp"
+            android:text="Enter weight:"
+            android:textSize="14sp"> </TextView>
+
+        <EditText
+            android:id= "@+id/weight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"> </EditText>
+
+        <Spinner
+            android:id="@+id/spinnerKgLb"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"> </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/TextViewTitle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="90dp"
+            android:text="Enter height: "
+            android:textSize="14sp"> </TextView>
+
+        <EditText
+            android:id= "@+id/heightCm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"> </EditText>
+
+        <Spinner
+            android:id="@+id/spinnerCmFt"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"></Spinner>
+
+        <EditText
+            android:id= "@+id/heightIn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"> </EditText>
+
+
+        <Spinner
+            android:id="@+id/spinnerInches"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"></Spinner>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_calcBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="Calculate bmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_solution1B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txt_solution2B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txt_solution3B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textSize="13sp" />
+
+
+    <Button
+        android:id="@+id/btn_menuB"
+        android:layout_width="172dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="36dp"
+        android:text="Back to Menu" />
+
+</LinearLayout>
